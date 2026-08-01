@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>STUDENT REGISTRATION FORM</h1>
+    <div class="container">
+        <form action="/registration">
+            <p>
+                <label for="Number">Total number of students:</label>
+                <input type="number" id="number" name="Total_Students" placeholder="Enter the total number of students">
+            </p>
+            <p>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="user_name" placeholder="Enter your full name">
+            </p>
+
+            <p>
+                <label for="section">Section:</label>
+                <input type="text" id="section" name="class_section" placeholder="Enter your section">
+            </p>
+            <button type="button" onclick="Register(event)">SUBMIT</button>
+        </form>
+    </div>
+    <script src="js.js"></script>
+    <div id="result"></div>
+</body>
+
+</html>

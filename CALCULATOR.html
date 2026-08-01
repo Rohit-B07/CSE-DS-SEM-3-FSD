@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function calculate() {
+        let a = Number(document.getElementById("Num1").value);
+        let b = Number(document.getElementById("Num2").value);
+        let c = document.getElementById("operator").value;
+
+        let result;
+
+        if (a == null || b == 0 || a == 0 || b == null) {
+            window.alert("Please Enter the number");
+            return;
+        }
+
+        if (c == "+") {
+            result = a + b;
+        } 
+        else if (c == "-") {
+            result = a - b;
+        } 
+        else if (c == "*") {
+            result = a * b;
+        } 
+        else if (c == "/") {
+            result = a / b;
+        }
+
+        document.write("Result = " + result);
+    }
+    </script>
+
+    <label>Enter no 1:</label>
+    <input type="number" id="Num1">
+
+    <br><br>
+
+    <label>Enter no 2:</label>
+    <input type="number" id="Num2">
+
+    <br><br>
+
+    <label>Operation:</label>
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="calculate()">Calculate</button>
+</body>
+</html>

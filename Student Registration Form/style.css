@@ -1,0 +1,24 @@
+.container{
+background-color: yellow;
+border: black;
+margin: 15px;
+padding: 10px;
+width: 40%;
+display: flex;
+text-align: center;
+align-content: center
+}
+body{
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+h1{
+    text-align: center
+}
+form{
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;                 
+    align-items: center; 
+}
