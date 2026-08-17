@@ -1,0 +1,63 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function multiply(){
+            let a = Number(document.getElementById("Num1").value);
+            let b = Number(document.getElementById("Num2").value);
+
+            
+            if (a == null || b == 0 || a == 0 || b == null) {
+                window.alert("Please Enter the numbers");
+                return;
+            }
+
+            let product = a * b;
+            document.write(product);
+        }
+    </script>
+</head>
+<body>
+    <label>Enter no 1:</label>
+    <input type="number" id="Num1">
+
+    <br><br>
+
+    <label>Enter no 2:</label>
+    <input type="number" id="Num2">
+
+    <br><br>
+
+    <label> SUM OF BOTH THE NOS ARE :   </label>
+    
+    <button onclick="multiply()">Result</button>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = Number(prompt("enter no.1"));
+        let b = Number(prompt("enter no.2"));
+        let res = 1;
+        function result(a, b) {
+            res = a * b;
+        }
+        result(a, b);
+        document.write(res);
+    </script>
+</body>
+
+</html>
