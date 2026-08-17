@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOUSEEVENTS</title>
+    <link rel="stylesheet" href="EVENTS.css">
+    <script>
+        function eventcall() {
+            alert("This is a mouse Event")
+        }
+
+        function eventhower() {
+            alert("This is mouse hower")
+        }
+
+    </script>
+</head>
+
+<body>
+    <!-- 
+    Mouse events
+    ->onclick
+    ->ondblclick (double click pe)
+    ->onmouseup
+    ->onmouse out
+    ->onmouseover
+    ->oncontextmenu (rigt click pe)
+    ->onmousedown
+     -->
+    <div id="box" onmouseup="eventhower()">
+        <div id="box1" onmousedown="eventhower()">
+            <div id="box2" oncontextmenu="eventhower()">
+                <div id="box3" ondblclick="eventhower()">
+                    <!-- <div id="box4" onmouseout="eventhower()"> -->
+                        <div id="box5" onmouseover="eventhower()">
+                            <p id="para">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti quae optio iste
+                                saepe, eius vero alias. Aspernatur architecto adipisci iste mollitia excepturi, quas
+                                aut, libero fugiat ea optio tempora vitae.
+                            </p>
+
+                            <button onclick="eventcall()">
+                                TOPIC
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    
+</body>
+
+</html>
