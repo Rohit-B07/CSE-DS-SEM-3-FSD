@@ -8,13 +8,21 @@
 </head>
 <body>
     <div id="form">
-        <h1 id="h1">Keyboard Functions</h1>
+        <!-- <h1 id="h1">Keyboard Functions</h1>
         <p> onkeydown</p>
         <input type="text" onkeydown="alert(this.value);">
         <p> onkeyup</p>
         <input type="text" onkeyup="alert(this.value);">
         <p> onkeypress</p>
-        <input type="text"  onkeypress="alert(this.value);">
+        <input type="text"  onkeypress="alert(this.value);"> -->
+
+        <h1 id="h1">Keyboard Functions</h1>
+        <p> onkeydown</p>
+        <input type="text" onkeydown="document.getElementById('form').style.background=this.value">
+        <p> onkeyup</p>
+        <input type="text" onkeyup="document.getElementById('form').style.background=this.value">
+        <p> onkeypress</p>
+        <input type="text"  onkeypress="document.getElementById('form').style.background=this.value">
     </div>
 </body>
 </html>
