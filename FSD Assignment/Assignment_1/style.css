@@ -1,0 +1,126 @@
+body{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: rgb(55, 53, 53);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 40px 30px;
+    background-color: rgb(204, 233, 248);
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.start-page{
+    max-width: 450px;
+    margin: 0 auto;
+}
+.start-title{
+    color: rgb(55, 53, 53);
+    margin-bottom: 5px;
+    font-size: 36px;
+}
+.start-subtitle{
+    color: rgb(100, 100, 100);
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+.form-group{
+    margin-bottom: 20px;
+    text-align: left;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: rgb(55, 53, 53);
+    font-size: 14px;
+}
+input{
+    width: 100%;
+    padding: 12px 16px;
+    margin: 0;
+    border: 2px solid rgb(200, 200, 200);
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: white;
+}
+input:focus{
+    outline: none;
+    border-color: rgb(70, 130, 180);
+    box-shadow: 0 0 0 3px rgba(70, 130, 180, 0.15);
+}
+button{
+    padding: 12px 28px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(233, 244, 202);
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.1s;
+}
+button:hover{
+    background-color: rgb(210, 225, 175);
+    transform: translateY(-1px);
+}
+button:active{
+    transform: translateY(0);
+}
+.start-btn{
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background-color: rgb(70, 130, 180);
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+}
+.start-btn:hover{
+    background-color: rgb(55, 110, 160);
+}
+#options button{
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin: 8px 0;
+    padding: 14px 18px;
+}
+#timer{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgb(55, 53, 53);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    min-width: 80px;
+}
+.option-btn.highlighted{
+    background-color: rgb(135, 206, 235);
+    border: 2px solid rgb(70, 130, 180);
+}
+.option-btn.correct{
+    background-color: rgb(144, 238, 144);
+}
+.option-btn.wrong{
+    background-color: rgb(255, 160, 160);
+}
+button:disabled{
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}

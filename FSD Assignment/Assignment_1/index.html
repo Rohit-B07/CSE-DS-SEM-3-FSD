@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignmet_1</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="startPage" class="start-page">
+            <h1 class="start-title">Simple Quiz</h1>
+            <p class="start-subtitle">Enter your details to begin</p>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="roll">Roll No</label>
+                <input type="text" id="roll" placeholder="Enter your roll number">
+            </div>
+            <div class="form-group">
+                <label for="section">Section</label>
+                <input type="text" id="section" placeholder="Enter your section">
+            </div>
+            <button class="start-btn" onclick="startQuiz()">Start Quiz</button>
+        </div>
+        <div id="quizPage" style="display:none;">
+            <div id="timer">03:00</div>
+            <h2 id="questionNumber"></h2>
+            <h3 id="question"></h3>
+            <div id="options"></div>
+            <div id="answerResult"></div>
+            <br>
+            <button id="nextBtn" onclick="nextQuestion()">Next</button>
+            <button onclick="submitQuiz()">Submit</button>
+        </div>
+        <div id="resultPage" style="display:none;">
+            <h1>Quiz Result</h1>
+            <p id="studentInfo"></p>
+            <h2 id="score"></h2>
+            <button onclick="location.reload()">Restart Quiz</button>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
